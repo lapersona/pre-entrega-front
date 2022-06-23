@@ -1,5 +1,5 @@
 const axios = require( 'axios' );
-const baseURL = 'https://pre-entrega.herokuapp.com/';
+const baseURL = 'https://pre-entrega.herokuapp.com';
 
 const putProducts = ( prodId, prodData ) => {
 
