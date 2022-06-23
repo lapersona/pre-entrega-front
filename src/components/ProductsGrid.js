@@ -24,11 +24,11 @@ const ProductsGrid = ({ products }) => {
           ( products === [] )
             ? ( <div>Loading...</div> )
             : (
-                products.map( product => {
+                products.map(product => {
                   return(
                     <ProductItem product={ product } key={ product.id } setEditProd={ setEditProd }/>
                   )
-                } )
+                })
             )
         }
       </div>
