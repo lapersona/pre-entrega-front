@@ -1,5 +1,4 @@
 import React from 'react';
-import getProducts from '../helpers/getProducts';
 import postProducts from '../helpers/postProduct';
 
 const NewProductForm = ({ setProducts, toggleNewProducInfo }) => {
