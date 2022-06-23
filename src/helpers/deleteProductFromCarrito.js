@@ -1,5 +1,5 @@
 const axios = require( 'axios' );
-const baseURL = 'https://ecommerce-coderh-backend.herokuapp.com';
+const baseURL = 'https://pre-entrega.herokuapp.com/';
 
 const deleteProductInCarrito = async( prodId ) => {
   const apiUrl = `${ baseURL }/api/carrito/1/productos/${ prodId }`;
