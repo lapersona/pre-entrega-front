@@ -7,11 +7,10 @@
   font-family: 'Lato', sans-serif;
 }
 
-/* =========================================NAVBAR=================================== */
 nav{
   width: 100vw;
   height: 10vh;
-  background-color: #EAEA6B;
+  background-color: #d3d3d3;
   position: relative;
   z-index: 10;
 }
@@ -26,15 +25,15 @@ nav{
 }
 
 .nav-content .left-nav{
-  background-color: #EB5754;
+  background-color: #243cc4;
   padding: 8px 15px;
-  border-radius: 10px;
+  border-radius: 2px;
   cursor: pointer;
   user-select: none;
 }
 
 .nav-content .left-nav h1{
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -47,20 +46,19 @@ nav{
   display: flex;
   align-items: center;
   margin-right: 35px;
-  background-color: #EB5754;
+  background-color: #243cc4;
   padding: 5px 10px;
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
-  transition: all 1s ease-in;
 }
 
 .new-product-container:hover{
-  outline: 1px solid #9E4341;
+  outline: 2px solid red;
 }
 
 .chart-container{
-  background-color: white;
+  background-color: #243cc4;
   padding: 8px;
   border-radius: 50%;
   display: flex;
@@ -70,14 +68,13 @@ nav{
 }
 
 .chart-container:hover{
-  outline: 1px solid black;
+  outline: 2px solid red;
 }
 
-/* =========================================main=================================== */
 main{
   height: 90vh;
   width: 100vw;
-  background-color: #6B6B31;
+  background-color: #767676;
   padding: 20px 5vw;
   z-index: 10;
   overflow-y: scroll;
@@ -94,7 +91,7 @@ main{
   max-width: 220px;
   min-height: 275px;
   max-height: 275px;
-  background-color: #B8B854;
+  background-color: #3d3d3d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,16 +101,16 @@ main{
 }
 
 .product-item:hover{
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px #243cc4;
 }
 
 .product-item .img-container{
   width: 90%;
   height: 65%;
   overflow: hidden;
-  outline: 1px solid rgb(0, 0, 0, 0.5);
+  outline: 1px solid #243cc4;
   border-radius: 10px;
-  background-color: #EEEEB5;
+  background-color: #ffffff;
 }
 
 .product-item .img-container img{
@@ -136,11 +133,15 @@ main{
 }
 
 .product-item .info-container .left-info p{
-  color: rgb( 0, 0, 0, 0.8 );
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.product-item .info-container .left-info h4{
+  color: rgba(186, 186, 186, 0.8);
 }
 
 .product-item .info-container .right-info{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   padding: 5px;
@@ -150,17 +151,16 @@ main{
 }
 
 .product-item .info-container .right-info:hover{
-  outline: 1px solid black;
+  outline: 2px solid rgb(255, 0, 0);
 }
 
-/* ========================================EDIT/DELTE PRODUCT======================================== */
 .deleteProdContainer{
   position: absolute;
   top: -5%;
   right: 3%;
-  background-color: rgb(235, 87, 84, 0.8);
+  background-color: rgba(255, 4, 0, 0.8);
   padding: 4px;
-  color: black;
+  color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   border-radius: 50%;
@@ -169,16 +169,16 @@ main{
 }
 
 .deleteProdContainer:hover{
-  outline: 1px solid black;
+  outline: 2px solid rgb(255, 255, 255);
 }
 
 .editProdContainer{
   position: absolute;
   top: -5%;
-  right: 20%;
-  background-color: rgba(102, 235, 84, 0.8);
+  left: 3%;
+  background-color: rgba(30, 255, 0, 0.8);
   padding: 4px;
-  color: black;
+  color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   border-radius: 50%;
@@ -187,10 +187,9 @@ main{
 }
 
 .editProdContainer:hover{
-  outline: 1px solid black;
+  outline: 2px solid black;
 }
 
-/* ========================================newProdForm======================================== */
 .newProdForm{
   position: fixed;
   top: 0;
@@ -199,7 +198,7 @@ main{
   width: 45vw;
   height: 100vh;
   padding: 50px 30px;
-  background-color: #EAEA6B;
+  background-color: #2f2f2f;
   transition: all 0.3s ease-in;
   z-index: 30;
 }
@@ -218,7 +217,7 @@ main{
 }
 
 .newProdForm form .newProdContainer{
-  background-color: #EB5754;
+  background-color: #243cc4;
   padding: 10px 25px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -234,7 +233,7 @@ main{
   width: 80%;
   height: 10%;
   text-align: center;
-  background-color: #b4b457;
+  background-color: #c1c1c1;
   border: none;
   border-radius: 5px;
   font-size: 1.5em;
@@ -246,7 +245,7 @@ main{
 }
 
 .newProdForm form button{
-  background-color: #EB5754;
+  background-color: #243cc4;
   padding: 5px 50px;
   border-radius: 10px;
   cursor: pointer;
@@ -267,7 +266,6 @@ main{
   user-select: none;
 }
 
-/* ========================================COVER======================================== */
 .cover{
   background-color: rgb(65, 65, 65, 0.7);
   position: fixed;
@@ -286,7 +284,6 @@ main{
   visibility: visible;
 }
 
-/* ========================================COVER======================================== */
 .editProdForm{
   position: fixed;
   top: 0;
@@ -295,7 +292,7 @@ main{
   width: 45vw;
   height: 100vh;
   padding: 50px 30px;
-  background-color: #EAEA6B;
+  background-color: #2f2f2f;
   transition: all 0.3s ease-in;
   z-index: 30;
 }
@@ -314,7 +311,7 @@ main{
 }
 
 .editProdForm form .newProdContainer{
-  background-color: #EB5754;
+  background-color: #243cc4;
   padding: 10px 25px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -328,9 +325,9 @@ main{
   padding: 0 10px;
   margin-bottom: 30px;
   width: 80%;
-  height: 10%;
+  height: 60px;
   text-align: center;
-  background-color: #b4b457;
+  background-color: #c1c1c1;
   border: none;
   border-radius: 5px;
   font-size: 1.5em;
@@ -342,7 +339,7 @@ main{
 }
 
 .editProdForm form button{
-  background-color: #EB5754;
+  background-color: #243cc4;
   padding: 5px 50px;
   border-radius: 10px;
   cursor: pointer;
@@ -363,7 +360,6 @@ main{
   user-select: none;
 }
 
-/* ========================================CARRITOTOGGLE======================================== */
 .carrito-toggle{
   position: fixed;
   top: 0;
@@ -372,7 +368,7 @@ main{
   width: 45vw;
   height: 100vh;
   padding: 50px 30px;
-  background-color: #EAEA6B;
+  background-color: #2f2f2f;
   transition: all 0.3s ease-in;
   z-index: 30;
 }
@@ -383,7 +379,7 @@ main{
 }
 
 .carrito-toggle-title{
-  background-color: #EB5754;
+  background-color: #243cc4;
   padding: 10px 25px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -397,7 +393,7 @@ main{
 
 table{
   width: 100%;
-  background-color: #6B6B31;
+  background-color: #c1c1c1;
   overflow-y: scroll;
 }
 

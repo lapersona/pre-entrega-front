@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-//components
 import CarritoProductItem from './CarritoProductItem';
-//helpers:
 import getProductsInCarrito from '../helpers/getProductsInCarrito';
 
 const Carrito = () => {
@@ -22,7 +20,7 @@ const Carrito = () => {
 
   return (
     <div className="carrito-toggle" id="carrito-toggle" >
-      <div className="carrito-toggle-title" >
+      <div className="carrito-toggle-title">
         Carrito
         <span className="material-symbols-outlined">shopping_cart</span>
       </div>

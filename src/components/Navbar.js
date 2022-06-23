@@ -24,12 +24,12 @@ const Navbar = ( setProducts ) => {
       <nav>
         <div className="nav-content" >
           <div className="left-nav" >
-            <h1>e-Commerce</h1>
+            <h1>Apple commerce</h1>
           </div>
           <div className="right-nav" >
             <div className="new-product-container" onClick={ () => toggleNewProducInfo() } >
               <span className="material-symbols-outlined">add</span>
-              <p>Producto</p>
+              <p>Agregar Producto</p>
             </div>
             <div className="chart-container" onClick={ () => carritoToggle() }>
               <span className="material-symbols-outlined">shopping_cart</span>

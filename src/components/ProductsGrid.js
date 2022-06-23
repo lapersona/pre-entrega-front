@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-//components:
 import ProductItem from './ProductItem';
 import EditProductForm from './EditProductForm';
 

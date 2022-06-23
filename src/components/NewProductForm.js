@@ -1,5 +1,4 @@
 import React from 'react';
-//helpers
 import getProducts from '../helpers/getProducts';
 import postProducts from '../helpers/postProduct';
 
@@ -40,7 +39,7 @@ const NewProductForm = ({ setProducts, toggleNewProducInfo }) => {
     <div id="newProdForm" className="newProdForm">
         <form onSubmit={ handleSubmit } >
           <div className="newProdContainer" >
-            <h4>Nuevo producto</h4>
+            <h4>Agregar Nuevo Producto</h4>
           </div>
           <label htmlFor="title" >Nombre</label>
           <input name="title" id="title" type="text" autoComplete="off" required></input>
@@ -52,7 +51,7 @@ const NewProductForm = ({ setProducts, toggleNewProducInfo }) => {
           <input name="thumbnail" id="thumbnail" type="text" autoComplete="off" required></input>
           <label htmlFor="stock" >Stock</label>
           <input name="stock" id="stock" type="number" autoComplete="off" required></input>
-          <button type="submit" >
+          <button type="submit">
             <span className="material-symbols-outlined">save</span>
           </button>
         </form>

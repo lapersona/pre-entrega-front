@@ -12,7 +12,7 @@ const putProducts = ( prodId, prodData ) => {
 
   axios.put( apiUrl, prodData, config )
     .then( res => console.log( res ) )
-    .catch( err => console.log( err ) );
+    .catch( err => console.log( err.responde.data ) );
 
 }
 
